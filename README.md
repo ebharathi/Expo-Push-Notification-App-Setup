@@ -49,3 +49,6 @@ components -> all design compoents files<br/>
 constants -> for usage of mock datas<br/>
 hooks -> creating custom hooks<br/>
 assets -> for images<br/>
+
+
+![image](https://github.com/user-attachments/assets/af122f75-c7d5-48fe-90a5-4b4d97d09077)
