@@ -1,50 +1,51 @@
 # Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## React Native System Setup
 
-## Get started
+I Recommend Cursor instead of VS-Code which is better since it has Github co-pilot pre-installed.Learn more about cursor in web.
 
-1. Install dependencies
+You can follow the method to run emulator on your system which is recommended.Or else just skip to step-2
 
-   ```bash
-   npm install
-   ```
+## STEP-1
 
-2. Start the app
+## METHOD TO RUN EMULATOR IN YOUR SYSTEM
 
-   ```bash
-    npx expo start
-   ```
+Then install jdk-17 and paste the bin path in user and system varibales of env
+Then Android studio and install an virtual device, default it will have Pixel_Fold mobile ,but it is recommended to install some other phone devices.
+After You will get SDK path from Android Studio -> SDK Manager, copy it
+Go to ENV Settings and create these envs in system variables
+ANDROID_HOME -->  C:\Users\{your_username}\AppData\Local\Android\Sdk
+Also add the above sdk path in system and user variables
 
-In the output, you'll find options to open the app in a
+After the above steps,open cmd and go to C:\Users\{your_username}\AppData\Local\Android\Sdk\emulator
+type : emulator -list-avds
+You will get list of virtual devices installed
+type : emulator.exe -avd "EMULATOR_NAME"
+This will start the emulator,then follow the below steps
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## STEP-2
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## METHOD TO RUN IN MOBILE PHONE USING EXPO APP AND METRO
 
-## Get a fresh project
+## Get started After cloning,go to project directory
 
-When you're ready, run:
+1.npm i
 
-```bash
-npm run reset-project
-```
+## Run Command
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2.npm start
+Choose 'a' -> Run on expo app. Download expo mobile app on playstore and connect desktop with same mobile hostspot or vise versa.
 
-## Learn more
+## Basic Setups
 
-To learn more about developing your project with Expo, look at the following resources:
+Tailwind configuration (tailwind.config.js)
+Typescript configuration (utils-> type.ts)
+Global State Management : Instead of redux , 'Zustand' is used here. Refer store.ts file & internet.
+Connecting backend : All api calls should be written as separate helper functions inside api.ts in utils and should be exported in tsx files
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Notes
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+components -> all design compoents files
+constants -> for usage of mock datas
+hooks -> creating custom hooks
+assets -> for images
