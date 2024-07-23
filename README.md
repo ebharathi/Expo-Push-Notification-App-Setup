@@ -5,6 +5,7 @@
 I Recommend Cursor instead of VS-Code which is better since it has Github co-pilot pre-installed.Learn more about cursor in web.
 
 You can follow the method to run emulator on your system which is recommended.Or else just skip to step-2
+![image](https://github.com/user-attachments/assets/76ff8ea1-7847-49ac-86b4-82c3c73291a8)
 
 ## STEP-1
 
